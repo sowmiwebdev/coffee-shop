@@ -3,7 +3,7 @@
 }
 .checkBtn{
     display: none;
-    margin-right: 20px;
+    padding-right: 20px;
     font-size: 23px;
     font-weight: bold;
     cursor: pointer;
