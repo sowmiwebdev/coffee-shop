@@ -1,135 +1,203 @@
- @media(max-width:576px){
-    
-    .header{
-        text-align: center;
-    }
-    body{
-        background-color:rgb(9, 134, 146);        /* overflow: hidden; */
-    }
-    .form{     
-        flex-direction: column;
-        margin-left: 50px ;       
-        border: none;
-        background-color:rgb(9, 134, 146);        /* overflow: hidden; */
-    }
-    .formControl-2{
-        margin-top: 10px;
-        margin-left: 200px;
-    }
-    .declare{
-        width: 65%;
-        text-align: center;
-    }
-    .declare2{
-        padding-top: 10px;
-        text-align: center;
-    }
-    .btn{
-        width: 500px; 
-        text-align:left;
-    }
-    .name input{
-        padding-right: 0px;
-    }
-    .name{
-        width: 140%;
-    }
-    .mobile-Check{
-        width: 200%;
-    }
-    .f-name , .l-name{
-        margin-right: 5px;
-        width: 35%;
-    }
-}  
-/* 
-@media(max-width:360px){
-   
-    .form{
-        width: 80%;
-        flex-direction: column;
-        margin:0px 20px ;
-    }
-    .formControl-2{
-        width: 280px;
-        margin-left: 55px;
-    }
-    .name{
-        width: 140%;
-    }
-    .name input{
-        width: 40%;
-    }
-    .address{
-        width: 220px;
-    }
-    .f-name , .l-name{
-        margin-right: 5px;
-        width: 45%;
-    }
-    .declare{
+#check{
+    display:none;
+}
+.checkBtn{
+    display: none;
+    padding-right: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header{
+    background-color:white;
+    height: 12vh;
+}
+
+/* navcontainer */
+
+@media(max-width:576px){
+    .navLinks{
+        display: none;
+        position: absolute;
+        margin-top: 75%;
+        margin-left: 5px;
+        font-size: 20px;
         width: 100%;
+        /* border-top: 1px solid black; */
+         /* border-bottom: 1px solid black; */
+   }
+    .checkBtn{
+        display: block;
     }
-    .btn{
-        width: 100%; 
+    #check:checked ~ .navLinks{
+        display: block;
+    }
+    .navLinks li{
+       padding: 9px;
+    }
+    .navLinks li a{
+        padding: 10px;
+    }
+    .logo img{
         margin-left: 35px;
-    }
-    .btn1, .btn2{
-        padding: 5px 10px;
-    }
-    .genderCheck{
-        width: 150%;
-    }
-    .qualification-check{
-        width: 160%;
-    }
-    .mobile-Check{
-        width: 160%;
-    }
+        height: 10;
+    }  
     
-} */
-/* 
- @media(max-width:360px){
-    
-    .form{
+} 
+
+/* herocontainer */ 
+
+@media(max-width:576px){
+    .h-heading{
+     font-size: 35px;
+ }
+    .h-para{
+     font-size: 14px;
+     line-height: 1.5;
+    }
+    .h-btn{
+     font-size: 15px;
+    }
+    .jumbotron{
+       width: 60%;
+       margin-left: 1%;
+    }
+ }
+
+ /* aboutcontainer  */
+  
+@media(max-width:576px){
+    .aboutSection{
         flex-direction: column;
-        margin-left: 40%;
-        width: 40%;
-        border: none;
-        background-color:rgb(75, 139, 75);
     }
-    .formControl-1{
-        margin-left: 0px;
+    .aboutContent h3{
+        font-size: 40px;
+        margin-bottom: 3%; 
     }
-    .formControl-2{
-        margin: 10px 20px 10px 120px;
-       margin-top: 10px;
-    }
-    .phone1{
-        width:15%;
-    }
-    .state{
-        width: 60%;
-    }
-    .motherTongue{
-        width: 60%;
+    .aboutContent p{
+        font-size: 12px;
+        margin-bottom: 5%; 
     } 
-    .f-name , .l-name{
-        width: 45%;
-        padding-right: 400px;
+    .aboutContent .btn{
+        font-size: 12px;
     }
-    .declare{
-        width: 80%;
-        text-align: center;
+   
+}
+  
+@media(max-width:452px){   
+    .aboutContent h3{
+        font-size: 30px;
     }
-    .parentsDetails{
-        width: 400px;
+    .aboutContent p{
+        font-size: 12px;
+    } 
+    .aboutContent .btn{
+        font-size: 12px;
+    }  
+     .aboutImage{
+     margin-left: 40px  ;
+     }
+} 
+
+/* facilitycontainer */
+
+@media(max-width:576px){
+    .fboxContainer{
+        flex-direction: column;
     }
-    .btn{
-        width: 80%; 
-        margin-left: 40px;
+    .fheading h3{
+        font-size: 30px;
     }
-    .btn1, .btn2{
-        padding: 5px 10px;
+    .fbox fp{
+        font-size: 12px;
     }
-}    */
+    .fheading img{
+        margin-top: 50px;
+    }
+    .fbox img{
+        margin-top: 5px;
+    }
+ }
+
+/* menuncontainer */
+
+ @media(max-width:576px){
+    .mbox-Container1{
+    flex-direction: column;
+    }
+    .mbox-Container2{
+        flex-direction: column;
+    }
+}
+
+
+/* gallerycontainer
+ */
+@media(max-width:576px){
+    .gbox-Container1{
+        flex-direction: column;
+    }
+    .gbox-Container2{
+        flex-direction: column;
+    }
+    .box img{
+        width: 300px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:576px){
+    .tbox-Container1{
+        flex-direction: column;
+    }
+    .tbox-Container2{
+        flex-direction: column;
+    }
+    .theading-Image h3{
+        font-size: 30px;
+    }
+    .box h3{
+        font-size: 17px;
+    }
+}
+
+/* contactcontainer */
+
+@media(max-width:576px){
+    .cbox-Container{
+        flex-direction: column;
+    }
+    .cbox-Image img{
+        width: 420px;
+    }
+    .table form{
+        width: 90%;
+        margin-left: 25px;
+    }
+    .box{
+        margin-left: 18px;
+    }
+    .cheading-Image img{
+        width: 150px;
+    }    
+}
+
+/* footerontainer */
+
+@media(max-width:576px){
+    .ftboxContainer{
+     flex-direction: column;
+    }
+    .ftbox h3{
+     font-size: 19px;
+    }
+    .ftbox p{
+     font-size: 15px;
+     line-height: 2px;
+    }
+    .ftbox{
+     margin-bottom: 20px;
+    }
+ }
+    
