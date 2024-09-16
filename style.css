@@ -2,8 +2,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
-    /* border: 1px solid red; */
+    box-sizing: border-box;
 }
 :root{
     --box-shadow:0.6rem 0.6rem rgba(0,0,0,.1);
@@ -92,7 +91,9 @@
 
 .h-btn:hover{
     background-color:black;
+    color: chartreuse;
 }
+
 /* .aboutSection */
 
 .aboutSection{
@@ -100,7 +101,6 @@
     align-items: center;
     width:80%;
     margin-left: 10%;
-    /* border: 1px solid black; */
 }
 .aboutImage img{
     width: 450px;
@@ -185,7 +185,7 @@
 .mheading{
     text-align: center;
 }
-.mainImage h3{
+.menuImage h3{
     font-family: 'Merienda', cursive;
     font-size: 40px;
 }
@@ -322,7 +322,7 @@
 .tfbox{
     font-size: 17.5px;
     font-family: 'Nunito', sans-serif;
-    width: 80%;
+    width: 90%;
     padding: 15px;
     margin:  10px;
     margin-left: 25px;
